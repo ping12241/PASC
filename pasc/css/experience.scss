@@ -1,0 +1,237 @@
+@import "style";
+
+.experience {
+    width: 960px;
+    @include flex(column ,center ,flex-start);
+}
+
+.experience_in {
+    padding-top: 30px;
+    width: 960px;
+    height: 1050px;
+    flex-wrap: wrap;
+    @include flex(row ,space-between ,space-between);
+}
+
+.experience_box {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.experience_content {
+    width: 300px;
+    height: 300px;
+    padding: 20px 0;
+    margin-top: 240px;
+    cursor: pointer;
+    background-color: #00000080;
+    @include flex(column ,center ,space-between);
+}
+
+.experience_1 {
+    background: url(../img/ex1.jpg);
+}
+
+.experience_2 {
+    background: url(../img/ex2.jpg);
+}
+
+.experience_3 {
+    background: url(../img/ex3.jpg);
+}
+
+.experience_4 {
+    background: url(../img/ex4.jpg);
+}
+
+.experience_5 {
+    background: url(../img/ex5.jpg);
+}
+
+.experience_6 {
+    background: url(../img/ex6.jpg);
+}
+
+.experience_7 {
+    background: url(../img/ex7.jpg);
+}
+
+.experience_8 {
+    background: url(../img/ex8.jpg);
+}
+
+.experience_box:hover >.experience_content {
+    animation: up 0.5s ease;
+    transform: translateY(-240px);
+}
+
+@keyframes up {
+    0% {transform: translateY(0px)}
+    100% {transform: translateY(-240px)}
+}
+
+.experience_content h3, .experience_content span {
+    color: white;
+}
+
+.experience_content span {
+    text-decoration: underline;
+}
+
+.experience_bg_lock{
+    width: 100%;
+    min-width: 1024px;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	background-color:rgba(0,0,0,0.70);
+	position: fixed;
+	transition: 0.5s;
+    z-index: 2;
+    @include flex(column ,center ,center);
+}
+
+.experience_bg_content {
+	width: 800px;
+    height: 500px;
+	background-color: rgba(255,255,255,1.00);
+	transition: 0.5s;
+    border-radius: 20px;
+    @include flex(column ,center ,space-around);
+}
+
+.experience_youtube {
+    width: 650px;
+    height: 380px;
+}
+
+.experience_bg_unlock, .experience_bg_content_unlock, .experience_youtube_unlock {
+    display: none;
+}
+
+.experience_top {
+    height: 400px;
+    @include flex(column ,center ,space-around);
+}
+
+.experience_movie {
+    height: 450px;
+    @include flex(column ,center ,space-around);
+}
+
+.experience_title {
+    @include flex(column ,center ,flex-start);
+}
+
+.experience_title a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*-------------介於 480px 與 960px 之間------------------*/
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    .experience {
+        width: 600px;
+        @include flex(column ,center ,flex-start);
+    }
+    
+    .experience_in {
+        width: 600px;
+        height: 1340px;
+        flex-wrap: wrap;
+        @include flex(row ,space-between ,space-around);
+    }
+
+    .experience_box {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
+
+    .experience_content {
+        width: 280px;
+        height: 280px;
+        margin-top: 220px;
+    }
+
+    .experience_bg_lock{
+        min-width: 600px;
+    }
+
+    .experience_bg_content {
+        width: 520px;
+        height: 340px;
+        margin-top: 80px;
+    }
+
+    .experience_movie {
+        height: 300px;
+    }
+
+    .experience_youtube {
+        width: 400px;
+        height: 240px;
+    }
+
+    .experience_youtube img {
+        width: 400px;
+    }
+    
+    .experience_title a {
+        font-size: 16px;
+    }
+
+    .experience_box:last-child {
+        display: none;
+    }
+
+}
+
+/*-------------未滿 480px，即 479px 以下------------------*/
+
+@media screen and (max-width: 479px) { 
+    .experience {
+        width: 350px;
+        @include flex(column ,center ,flex-start);
+    }
+    
+    .experience_in {
+        width: 350px;
+        height: 2600px;
+        flex-wrap: wrap;
+        @include flex(row ,space-between ,space-around);
+    }
+    
+    .experience_box {
+        margin-bottom: 20px;
+    }
+
+    .experience_bg_lock{
+        min-width: 350px;
+    }
+    
+    .experience_bg_content {
+        width: 320px;
+        height: 300px;
+    }
+
+    .experience_movie {
+        height: 280px;
+    }
+
+    .experience_youtube {
+        width: 300px;
+        height: 200px;
+    }
+
+    .experience_youtube img {
+        width: 320px;
+    }
+    
+    .experience_title a {
+        font-size: 16px;
+    }
+
+}
