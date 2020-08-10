@@ -77,7 +77,7 @@ function open() {
 
 function toggleVideo() {
   var i = 1;
-  for (i = 1; i <= 7; i++) {
+  for (i = 1; i <= 8; i++) {
       var contentid = "experiencecontent_" + i;
       var div = document.getElementById(contentid);
       var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
