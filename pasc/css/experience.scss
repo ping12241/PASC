@@ -62,6 +62,11 @@
     background: url(../img/ex8.jpg);
 }
 
+.ex7 {
+    border: 0;
+    background: url(../img/ex7-7.png);
+}
+
 .experience_box:hover >.experience_content {
     animation: up 0.5s ease;
     transform: translateY(-240px);
