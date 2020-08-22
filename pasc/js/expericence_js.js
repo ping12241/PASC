@@ -50,6 +50,7 @@ function imgup() {
                 "experience_6": "experiencecontent_6",
                 "experience_7": "experiencecontent_7",
                 "experience_8": "experiencecontent_8",
+                "experience_9": "experiencecontent_9",
                };
   var contentid = idlist[id];
   document.getElementById(contentid).className = "experience_bg_content";
@@ -58,7 +59,7 @@ function imgup() {
 
 function imgunlock() {
   var i = 1;
-  for (i = 1; i <= 8; i++) {
+  for (i = 1; i <= 9; i++) {
       var contentid = "experiencecontent_" + i;
       document.getElementById(contentid).className = "experience_bg_content_unlock";
   }
@@ -77,7 +78,7 @@ function open() {
 
 function toggleVideo() {
   var i = 1;
-  for (i = 1; i <= 8; i++) {
+  for (i = 1; i <= 9; i++) {
       var contentid = "experiencecontent_" + i;
       var div = document.getElementById(contentid);
       var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
