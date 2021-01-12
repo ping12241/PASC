@@ -555,8 +555,8 @@ footer {
 }
 
 .news {
-  width: 960px;
-  height: 800px;
+  width: 1080px;
+  height: 850px;
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,8 +602,9 @@ footer {
 }
 
 .news_in {
-  width: 960px;
-  height: 720px;
+  display: none;
+  width: 1080px;
+  height: 780px;
   padding: 20px 0;
   background-color: white;
   -webkit-box-shadow: 0 0 5px #666666;
@@ -624,7 +625,7 @@ footer {
 
 .news_in table {
   border-collapse: collapse;
-  width: 90%;
+  width: 95%;
   height: 650px;
 }
 
@@ -639,11 +640,14 @@ footer {
 .news_in a {
   font-size: 16px;
   line-height: 32px;
+  width: 70px;
+  margin: 0 auto;
 }
 
 .news_in a:hover {
   font-weight: bold;
   color: #1c7db2;
+  cursor: pointer;
 }
 
 .news_in a.time {
@@ -655,6 +659,7 @@ footer {
   .news {
     margin-top: 30px;
     width: 80%;
+    height: 1100px;
     min-width: 560px;
   }
   .news_title {
@@ -667,11 +672,11 @@ footer {
   .news_in {
     width: 100%;
     min-width: 560px;
-    height: 800px;
+    height: 980px;
     padding: 10px 0;
   }
   .news_in table {
-    height: 700px;
+    height: 900px;
   }
   .news_in table td:nth-child(1) {
     padding-right: 10px;
@@ -693,7 +698,7 @@ footer {
   .news {
     margin-top: 30px;
     width: 320px;
-    height: 1150px;
+    height: 1600px;
   }
   .news_title {
     height: 40px;
@@ -703,12 +708,12 @@ footer {
     font-size: 18px;
   }
   .news_in table {
-    height: 1050px;
+    height: 1450px;
   }
   .news_in {
     width: 320px;
-    height: 1100px;
-    padding: 10px 0;
+    height: 1550px;
+    padding: 10px 5px;
   }
   .news_in table td:nth-child(1) {
     padding-right: 10px;

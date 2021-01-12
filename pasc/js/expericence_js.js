@@ -35,10 +35,6 @@ function gotop() {
 
 /*-------------------------------------*/
 
-
-
-/*-------------------------------------*/
-
 function imgup() {
   imgunlock();
   var id = event.currentTarget.id;
@@ -51,6 +47,15 @@ function imgup() {
                 "experience_7": "experiencecontent_7",
                 "experience_8": "experiencecontent_8",
                 "experience_9": "experiencecontent_9",
+                "experience_10": "experiencecontent_10",
+                "experience_11": "experiencecontent_11",
+                "experience_12": "experiencecontent_12",
+                "experience_13": "experiencecontent_13",
+                "experience_14": "experiencecontent_14",
+                "experience_15": "experiencecontent_15",
+                "experience_16": "experiencecontent_16",
+                "experience_17": "experiencecontent_17",
+                "experience_18": "experiencecontent_18",
                };
   var contentid = idlist[id];
   document.getElementById(contentid).className = "experience_bg_content";
@@ -59,7 +64,7 @@ function imgup() {
 
 function imgunlock() {
   var i = 1;
-  for (i = 1; i <= 9; i++) {
+  for (i = 1; i <= 18; i++) {
       var contentid = "experiencecontent_" + i;
       document.getElementById(contentid).className = "experience_bg_content_unlock";
   }
@@ -78,7 +83,7 @@ function open() {
 
 function toggleVideo() {
   var i = 1;
-  for (i = 1; i <= 9; i++) {
+  for (i = 1; i <= 18; i++) {
       var contentid = "experiencecontent_" + i;
       var div = document.getElementById(contentid);
       var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
@@ -99,6 +104,32 @@ function menu() {
   }
 
 }
+
+/*-------------------------------------*/
+var content_page = 1;
+experience_in(content_page);
+
+function page(n) {
+  experience_in(content_page += n);
+}
+
+function experience_in(n) {
+  var i;
+  var content = document.getElementsByClassName("experience_in");
+  if (n > content.length) {content_page = 1}
+  if (n < 1) {content_page = page.length}
+  for (i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+  }
+  content[content_page-1].style.display = "flex";
+}
+
+
+
+
+
+
+
 
 
 

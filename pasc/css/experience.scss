@@ -6,11 +6,29 @@
 }
 
 .experience_in {
+    display: none;
     padding-top: 30px;
     width: 960px;
-    height: 1050px;
+    height: 1100px;
+    flex-wrap: wrap;
+    @include flex(row ,space-between ,center);
+}
+
+.experience_about {
+    height: 1020px;
     flex-wrap: wrap;
     @include flex(row ,space-between ,space-between);
+}
+
+.experience_page {
+    width: 80px;
+    height: 50px;
+}
+
+.experience_page:hover >a {
+    font-weight: bold;
+    color: #1c7db2;
+    cursor: pointer;
 }
 
 .experience_box {
@@ -66,12 +84,112 @@
     background: url(../img/ex9.jpg);
 }
 
+.experience_10 {
+    background: url(../img/ex10.jpg);
+}
+
+.experience_11 {
+    background: url(../img/ex11.jpg);
+}
+
+.experience_12 {
+    background: url(../img/ex12.jpg);
+}
+
+.experience_13 {
+    background: url(../img/ex13.jpg);
+}
+
+.experience_14 {
+    background: url(../img/ex14.jpg);
+}
+
+.experience_15 {
+    background: url(../img/ex15.jpg);
+}
+
+.experience_16 {
+    background: url(../img/ex16.jpg);
+}
+
+.experience_17 {
+    background: url(../img/ex17.jpg);
+}
+
+.experience_18 {
+    background: url(../img/ex18.jpg);
+}
+
 .ex7 {
     width: 100%;
     height: 100%;
     border: 0;
-    background: url(../img/ex7-7.png);
+    background: url(../img/ex7-1.png);
     background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ex10 {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: url(../img/ex10-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ex11 {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: url(../img/ex11-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ex12 {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: url(../img/ex12-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ex14 {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: url(../img/ex14-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ex15 {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: url(../img/ex15-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ex16 {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: url(../img/ex16-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ex18 {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: url(../img/ex18-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .experience_box:hover >.experience_content {
@@ -150,10 +268,14 @@
     }
     
     .experience_in {
-        width: 600px;
-        height: 1340px;
+        width: 580px;
+        height: 1650px;
         flex-wrap: wrap;
         @include flex(row ,space-between ,space-around);
+    }
+
+    .experience_about {
+        height: 1550px;
     }
 
     .experience_box {
@@ -195,10 +317,6 @@
         font-size: 16px;
     }
 
-    .experience_box:last-child {
-        display: none;
-    }
-
 }
 
 /*-------------未滿 480px，即 479px 以下------------------*/
@@ -211,7 +329,13 @@
     
     .experience_in {
         width: 350px;
-        height: 2950px;
+        height: 3080px;
+        flex-wrap: wrap;
+        @include flex(row ,space-between ,space-around);
+    }
+
+    .experience_about {
+        height: 3000px;
         flex-wrap: wrap;
         @include flex(row ,space-between ,space-around);
     }
